@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4">
+            <h1 class="text-center font-bold text-2xl">NAVBAR</h1>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <!-- Sección de destacado -->
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-6 relative h-[70vh]">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-4xl font-bold">MONDONGONI A LA ITALIANI</h2>
+                    <p class="text-xl mt-2">LUN-VIERNES 7PM</p>
+                    <p class="text-lg mt-2">Disfruta en familia con tu agüini de gelatini de cortesia</p>
+                </div>
+                <div>
+                    <img src="mondonguito.jpg" alt="Imagen de fondo" class="w-full h-48 object-cover md:w-64 rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Botones de categorías -->
+        <section class="grid grid-cols-3 gap-4 mb-6">
+            <button class="bg-green-300 rounded-lg py-2 text-lg font-bold">VEGANA</button>
+            <button class="bg-yellow-300 rounded-lg py-2 text-lg font-bold">FRUTAS</button>
+            <button class="bg-orange-300 rounded-lg py-2 text-lg font-bold">INTEGRAL</button>
+        </section>
+
+        <!-- Sección inferior con imágenes y texto -->
+        <section class="flex flex-col space-y-4">
+            <!-- Artículo 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg h-[55vh] w-full">
+                <img src="img_articulo.jpg" alt="Comida y artículo" class="mb-4 w-full h-32 object-cover rounded-lg">
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget tortor vitae quam.</p>
+            </div>
+            <!-- Imagen del plato del día -->
+            <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col justify-center h-[30vh] w-full">
+                <img src="img_plato_dia.jpg" alt="Plato del día" class="mb-4 w-full h-32 object-cover rounded-lg">
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget tortor vitae quam.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
